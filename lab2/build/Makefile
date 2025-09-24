@@ -130,6 +130,19 @@ utils/fast:
 .PHONY : utils/fast
 
 #=============================================================================
+# Target rules for targets named dynamic_utils
+
+# Build rule for target.
+dynamic_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dynamic_utils
+.PHONY : dynamic_utils
+
+# fast build rule for target.
+dynamic_utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/build
+.PHONY : dynamic_utils/fast
+
+#=============================================================================
 # Target rules for targets named lab2_main
 
 # Build rule for target.
@@ -141,6 +154,30 @@ lab2_main: cmake_check_build_system
 lab2_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_main.dir/build.make CMakeFiles/lab2_main.dir/build
 .PHONY : lab2_main/fast
+
+dynamic_utils/dynamic_utils.o: dynamic_utils/dynamic_utils.cpp.o
+.PHONY : dynamic_utils/dynamic_utils.o
+
+# target to build an object file
+dynamic_utils/dynamic_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/dynamic_utils/dynamic_utils.cpp.o
+.PHONY : dynamic_utils/dynamic_utils.cpp.o
+
+dynamic_utils/dynamic_utils.i: dynamic_utils/dynamic_utils.cpp.i
+.PHONY : dynamic_utils/dynamic_utils.i
+
+# target to preprocess a source file
+dynamic_utils/dynamic_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/dynamic_utils/dynamic_utils.cpp.i
+.PHONY : dynamic_utils/dynamic_utils.cpp.i
+
+dynamic_utils/dynamic_utils.s: dynamic_utils/dynamic_utils.cpp.s
+.PHONY : dynamic_utils/dynamic_utils.s
+
+# target to generate assembly for a file
+dynamic_utils/dynamic_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/dynamic_utils/dynamic_utils.cpp.s
+.PHONY : dynamic_utils/dynamic_utils.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -198,8 +235,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dynamic_utils"
 	@echo "... lab2_main"
 	@echo "... utils"
+	@echo "... dynamic_utils/dynamic_utils.o"
+	@echo "... dynamic_utils/dynamic_utils.i"
+	@echo "... dynamic_utils/dynamic_utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -93,6 +93,7 @@ lab2_main_EXTERNAL_OBJECTS =
 lab2_main: CMakeFiles/lab2_main.dir/main.cpp.o
 lab2_main: CMakeFiles/lab2_main.dir/build.make
 lab2_main: libutils.a
+lab2_main: libdynamic_utils.a
 lab2_main: CMakeFiles/lab2_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab2_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab2_main.dir/link.txt --verbose=$(VERBOSE)

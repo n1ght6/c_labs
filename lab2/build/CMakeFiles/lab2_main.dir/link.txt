@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab2_main.dir/main.cpp.o -o lab2_main  libutils.a 
+/usr/bin/c++ CMakeFiles/lab2_main.dir/main.cpp.o -o lab2_main  libutils.a libdynamic_utils.a 

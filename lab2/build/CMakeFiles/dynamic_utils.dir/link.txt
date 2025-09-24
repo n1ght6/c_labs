@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdynamic_utils.a CMakeFiles/dynamic_utils.dir/dynamic_utils/dynamic_utils.cpp.o
+/usr/bin/ranlib libdynamic_utils.a

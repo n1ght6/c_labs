@@ -1,6 +1,8 @@
 #include "utils/utils.h"
+#include "dynamic_utils/dynamic_utils.h"
 
 int main(){
-    HelloWorld();
+    StaticHello();
+    DynamicHello();
     return 0;
 }

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nighty/c_labs/lab2 -I/home/nighty/c_labs/lab2/utils -I/home/nighty/c_labs/lab2/dynamic_utils
+CXX_INCLUDES = 
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -std=gnu++11 -fvisibility=hidden -fvisibility-inlines-hidden
 

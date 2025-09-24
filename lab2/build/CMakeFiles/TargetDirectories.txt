@@ -1,4 +1,5 @@
 /home/nighty/c_labs/lab2/build/CMakeFiles/utils.dir
+/home/nighty/c_labs/lab2/build/CMakeFiles/dynamic_utils.dir
 /home/nighty/c_labs/lab2/build/CMakeFiles/lab2_main.dir
 /home/nighty/c_labs/lab2/build/CMakeFiles/edit_cache.dir
 /home/nighty/c_labs/lab2/build/CMakeFiles/rebuild_cache.dir

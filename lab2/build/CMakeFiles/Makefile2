@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/nighty/c_labs/lab2/build
 
 # The main recursive "all" target.
 all: CMakeFiles/utils.dir/all
+all: CMakeFiles/dynamic_utils.dir/all
 all: CMakeFiles/lab2_main.dir/all
 .PHONY : all
 
@@ -73,6 +74,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/utils.dir/clean
+clean: CMakeFiles/dynamic_utils.dir/clean
 clean: CMakeFiles/lab2_main.dir/clean
 .PHONY : clean
 
@@ -83,7 +85,7 @@ clean: CMakeFiles/lab2_main.dir/clean
 CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=3,4 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=5,6 "Built target utils"
 .PHONY : CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,18 +105,45 @@ CMakeFiles/utils.dir/clean:
 .PHONY : CMakeFiles/utils.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/dynamic_utils.dir
+
+# All Build rule for target.
+CMakeFiles/dynamic_utils.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=1,2 "Built target dynamic_utils"
+.PHONY : CMakeFiles/dynamic_utils.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dynamic_utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nighty/c_labs/lab2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dynamic_utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nighty/c_labs/lab2/build/CMakeFiles 0
+.PHONY : CMakeFiles/dynamic_utils.dir/rule
+
+# Convenience name for target.
+dynamic_utils: CMakeFiles/dynamic_utils.dir/rule
+.PHONY : dynamic_utils
+
+# clean rule for target.
+CMakeFiles/dynamic_utils.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_utils.dir/build.make CMakeFiles/dynamic_utils.dir/clean
+.PHONY : CMakeFiles/dynamic_utils.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lab2_main.dir
 
 # All Build rule for target.
+CMakeFiles/lab2_main.dir/all: CMakeFiles/dynamic_utils.dir/all
 CMakeFiles/lab2_main.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_main.dir/build.make CMakeFiles/lab2_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_main.dir/build.make CMakeFiles/lab2_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=1,2 "Built target lab2_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nighty/c_labs/lab2/build/CMakeFiles --progress-num=3,4 "Built target lab2_main"
 .PHONY : CMakeFiles/lab2_main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab2_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nighty/c_labs/lab2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nighty/c_labs/lab2/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab2_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nighty/c_labs/lab2/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab2_main.dir/rule

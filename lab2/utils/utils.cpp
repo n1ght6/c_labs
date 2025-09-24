@@ -1,6 +1,6 @@
 #include "utils.h"
 #include <iostream>
 
-void HelloWorld(){
-    std::cout << "Hello, World!" << std::endl;
+void StaticHello(){
+    std::cout << "Hello from STATIC library!" << std::endl;
 }
